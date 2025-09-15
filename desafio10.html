@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Lógica 10</title>
+</head>
+<body>
+    
+    <script>
+
+        var altura = Number(prompt("Digite sua altura em metros (ex: 1.75) : "));
+        var genero = Number(prompt("Digite seu gênero (1 - feminino | 2 - masculino) : "));
+
+        var pesoIdeal;
+
+        if (genero == 2) {
+            pesoIdeal = (72.7 * altura) - 58;
+            alert("Seu peso ideal é: " + pesoIdeal.toFixed(2) + " kg.");
+        } else if (genero == 1) {
+            pesoIdeal = (62.1 * altura) - 44.7;
+            alert("Seu peso ideal é: " + pesoIdeal.toFixed(2) + " kg.");
+        } else {
+            alert("Escolha uma opção.");
+        }
+
+    </script>
+</body>
+</html>

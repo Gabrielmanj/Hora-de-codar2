@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Lógica 4</title>
+</head>
+<body>
+
+    <script>
+        var valor1 = prompt("Digite o primeiro valor: "); 
+        var valor2 = prompt("Digite um valor diferente do anterior: ");
+        var valor3 = prompt("Digite um valor diferente do anterior: ");
+
+        var soma;
+
+        if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3) {
+            alert("Os valores devem ser diferentes. ");
+        } else if (valor1 < valor2 && valor1 < valor3) {
+            soma = Number(valor2) + Number(valor3);
+            alert("A soma dos dois maiores valores é: " + soma);
+        } else if (valor2 < valor1 && valor2 < valor3) {
+            soma = Number(valor1) + Number(valor3);
+            alert("A soma dos dois maiores valores é: " + soma);
+        } else {
+            soma = Number(valor1) + Number(valor2);
+            alert("A soma dos dois maiores valores é: " + soma);
+        }
+    </script>
+</body>
+</html>

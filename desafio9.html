@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Lógica 9</title>
+</head>
+<body>
+    
+    <script>
+        let anoNascimento = Number(prompt("Digite o ano do seu nascimento: "));
+        
+        let anoAtual = new Date().getFullYear(); // pega o ano atual
+        let idade = anoAtual - anoNascimento;
+
+        if (idade >= 16) {
+            alert("Você possui " + idade + " anos de idade, você pode votar neste ano. " );
+        } else {
+            alert("Você possui " + idade + " anos de idade, você ainda não pode votar. ");
+        }
+    </script>
+</body>
+</html>

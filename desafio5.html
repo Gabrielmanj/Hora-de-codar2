@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Lógica 5</title>
+</head>
+<body>
+
+    <script>
+
+        let valores = []; 
+        let soma = 0;
+
+        for (let i = 1; i <= 6; i++) {
+            let numero = Number(prompt("Digite o " + i + "º valor: "));
+            valores.push(numero); // adiciona o número no array
+            soma += numero;
+        }
+
+        let media = soma / valores.length;
+
+        alert("A soma dos valores é: " + valores.join(", ")); //transforma o array em uma string separada por vírgulas.
+        alert("Os valores digitados foram: " + media);
+    </script>
+</body>
+</html>
